@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cessaaliezi.ug">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Customers"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- suppress AndroidDomInspection -->
+        <activity android:name=".fragments.Male" />
+        <activity android:name=".fragments.Female" />
+        <activity android:name=".Style" />
+        <activity android:name=".fragments.Detail" />
+        <activity
+            android:name=".Option_style"
+            android:label="@string/title_activity_option_style"
+            android:parentActivityName=".Style"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cessaaliezi.ug.Style" />
+        </activity>
+    </application>
+
+</manifest>

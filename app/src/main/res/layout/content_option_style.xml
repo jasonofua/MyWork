@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="25dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="20dp"
+    android:paddingTop="25dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.cessaaliezi.ug.Option_style"
+    tools:showIn="@layout/activity_option_style">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Style Name"
+            android:textColor="#774fc7"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Style Shirt 1"
+            android:textColor="#000"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#969393">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Measurement: 6"
+            android:textColor="#774fc7"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chest"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Shoulder Length"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Shirt Length"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Arm Length"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Arm Diameter"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Waist Diameter"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#969393">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Images"
+            android:textColor="#774fc7"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:paddingBottom="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_launcher_round" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_launcher_round" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_launcher_round" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_launcher_round" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="8dp"
+                        android:src="@drawable/ic_launcher_round" />
+
+
+</LinearLayout>
+
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/img_add"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="#ccc5c5"
+                android:padding="10dp"
+                android:src="@drawable/add" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Style Comment"
+            android:textColor="#774fc7"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add more thoughts and ideas about the style here"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+</ScrollView>

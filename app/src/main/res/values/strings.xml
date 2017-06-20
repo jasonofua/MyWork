@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Ug</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="customers">
+        <item>Yinka Okon</item>
+        <item>Ugo Chukwuwemeka</item>
+        <item>Eke Carisson</item>
+        <item>Tedimola Doro</item>
+        <item>Chidiebere O</item>
+        <item>Osmiemhen A</item>
+        <item>Oghenefegha Abiku</item>
+        <item>Franklin C.</item>
+    </string-array>
+
+    <array name="profile_pic">
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher_round</item>
+        <item>@mipmap/ic_launcher_round</item>
+    </array>
+    <string name="title_activity_option_style">Option_style</string>
+</resources>

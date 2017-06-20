@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:background="#774fc7"
+    android:src="@drawable/gallery"
+    android:padding="10dp"
+    android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:paddingLeft="30dp"
+            android:textColor="#774fc7"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Gallery"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:background="#774fc7"
+            android:src="@drawable/camera"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:paddingLeft="30dp"
+            android:textSize="25sp"
+            android:textColor="#774fc7"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="Camera"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
