@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,17 +63,37 @@ public class CustomAdapter extends BaseAdapter {
         TextView cusName = (TextView)convertView.findViewById(R.id.cusname);
         ImageView profile_img = (ImageView)convertView.findViewById(R.id.profileImage);
 
-        final String name = rowItems.get(position).getCustomerName();
-        int img = rowItems.get(position).getProfile_pic();
-        cusName.setText(name);
-        profile_img.setImageResource(img);
+        try {
+            final String name = rowItems.get(position).getCustomerName();
+            int img = rowItems.get(position).getProfile_pic();
+            cusName.setText(name);
+            profile_img.setImageResource(img);
 
-        convertView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(context,name,Toast.LENGTH_LONG).show();
-            }
-        });
+            profile_img.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    PopupMenu popup = new PopupMenu(context,view);
+                    popup.getMenuInflater().inflate(R.menu.menu_overflow_styles,
+                            popup.getMenu());
+
+                    popup.show();
+
+                }
+            });
+
+
+
+            convertView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Toast.makeText(context,name,Toast.LENGTH_LONG).show();
+                }
+            });
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
 
         return convertView;
     }

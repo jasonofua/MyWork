@@ -13,7 +13,33 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base"></style>
+    <!--<style name="CustomDialogTheme" parent="@android:style/Theme.Dialog">-->
+        <!--<item name="android:bottomBright">@color/white</item>-->
+        <!--<item name="android:bottomDark">@color/white</item>-->
+        <!--<item name="android:bottomMedium">@color/white</item>-->
+        <!--<item name="android:centerBright">@color/white</item>-->
+        <!--<item name="android:centerDark">@color/white</item>-->
+        <!--<item name="android:centerMedium">@color/white</item>-->
+        <!--<item name="android:fullBright">@color/orange</item>-->
+        <!--<item name="android:fullDark">@color/orange</item>-->
+        <!--<item name="android:topBright">@color/blue</item>-->
+        <!--<item name="android:topDark">@color/blue</item>-->
+    <!--</style>-->
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#fff</item>
+    </style>
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!--<style name="MyTheme2">-->
+        <!--<item name="android:alertDialogStyle">@style/CustomDialogTheme</item>-->
+    <!--</style>-->
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar</item>
+    </style>
 
     <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>

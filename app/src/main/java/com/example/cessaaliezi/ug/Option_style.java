@@ -1,7 +1,6 @@
 package com.example.cessaaliezi.ug;
 
-import android.app.Dialog;
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,7 +12,7 @@ import android.widget.ImageView;
 public class Option_style extends AppCompatActivity {
 
     ImageView clicked;
-    final Context context = this;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +21,25 @@ public class Option_style extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        clicked = (ImageView)findViewById(R.id.img_add);
+
+        clicked = (ImageView) findViewById(R.id.img_add);
 
         clicked.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Dialog dialog = new Dialog(context);
-                dialog.setContentView(R.layout.custom_dialog);
-                dialog.setTitle("Choose image source");
-
+//              final Dialog dialog = new Dialog(Option_style.this);
+//               dialog.setTitle("Choose Image Source");
+//                dialog.setContentView(R.layout.custom_dialog);
+//
+//
+//
+//               TextView txt_g = (TextView)dialog.findViewById(R.id.txt_gallery);
+//                TextView txt_c = (TextView)dialog.findViewById(R.id.txt_camera);
+//               ImageView img_g = (ImageView) dialog.findViewById(R.id.img_gallery);
+//           ImageView img_c = (ImageView) dialog.findViewById(R.id.img_camera);
+//
+//               dialog.show();
+                startActivity(new Intent(Option_style.this,ListStyles.class));
             }
         });
 

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.cessaaliezi.ug.Home"
+    tools:showIn="@layout/activity_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="9"
+            android:textColor="#cbd44b"
+            android:textSize="150sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Clothes Due This Week"
+            android:textColor="#774fc7"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/heart" />
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/task" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:text="Customers"
+                android:textAlignment="center"
+                android:textColor="#774fc7" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:text="Styles"
+                android:textAlignment="center"
+                android:textColor="#774fc7" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Tasks"
+                android:textAlignment="center"
+                android:textColor="#774fc7" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_galler"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/book" />
+
+            <ImageView
+                android:id="@+id/img_galle"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/chart" />
+
+            <ImageView
+                android:id="@+id/img_gallery"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/settings" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:text="Tips &amp; Trick"
+                android:textAlignment="center"
+                android:textColor="#774fc7" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Reports"
+                android:textAlignment="center"
+                android:textColor="#774fc7" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textColor="#774fc7" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

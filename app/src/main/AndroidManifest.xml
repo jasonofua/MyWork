@@ -33,6 +33,29 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.cessaaliezi.ug.Style" />
         </activity>
+        <activity
+            android:name=".LIst_Styles"
+            android:label="@string/title_activity_list__styles"
+            android:parentActivityName=".Customers"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cessaaliezi.ug.Customers" />
+        </activity>
+        <activity
+            android:name=".ListStyles"
+            android:label="@string/title_activity_list_styles"
+            android:parentActivityName=".Customers"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.cessaaliezi.ug.Customers" />
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Edit_scree"></activity>
     </application>
 
 </manifest>

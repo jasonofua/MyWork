@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="15dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -11,17 +12,19 @@
         android:orientation="horizontal">
 
 <ImageView
-    android:layout_width="70dp"
-    android:layout_height="70dp"
-    android:background="#774fc7"
+    android:id="@+id/img_gallery"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/round"
     android:src="@drawable/gallery"
     android:padding="10dp"
     android:layout_marginLeft="10dp"/>
 
         <TextView
+            android:id="@+id/txt_gallery"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:paddingLeft="30dp"
             android:textColor="#774fc7"
             android:textSize="25sp"
@@ -37,17 +40,19 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="70dp"
-            android:background="#774fc7"
+            android:id="@+id/img_camera"
+            android:layout_width="50dp"
+            android:background="@drawable/round"
             android:src="@drawable/camera"
             android:padding="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_height="70dp" />
+            android:layout_height="50dp" />
 
         <TextView
+            android:id="@+id/txt_camera"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:paddingLeft="30dp"
             android:textSize="25sp"
             android:textColor="#774fc7"

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.cessaaliezi.ug.Option_style">
+    tools:context="com.example.cessaaliezi.ug.Home">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -20,16 +20,18 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_option_style" />
+    <include layout="@layout/content_home" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab2"
+    <io.github.yavski.fabspeeddial.FabSpeedDial
+        android:id="@+id/fabspeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fabSize="normal"
-        android:layout_marginBottom="60dp"
-        android:layout_marginRight="18dp"
         android:layout_gravity="bottom|end"
-        app:srcCompat="@drawable/edit" />
+        app:fabGravity="bottom_end"
+        app:fabMenu="@menu/fabmenu"
+        app:miniFabBackgroundTint="@android:color/white"
+        app:miniFabDrawableTint="?attr/colorPrimaryDark"
+        app:miniFabTitleTextColor="?attr/colorPrimaryDark" />
+
 
 </android.support.design.widget.CoordinatorLayout>
